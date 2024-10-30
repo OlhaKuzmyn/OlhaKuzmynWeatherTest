@@ -1,0 +1,4 @@
+This test task is taking the data from https://openweathermap.org/current of London weather and transforms it to later reupload to https://mockapi.io/projects.
+Running the code in console does the task
+Error handling is added
+Comments are added to explain the code
