@@ -1,4 +1,63 @@
 This test task is taking the data from https://openweathermap.org/current of London weather and transforms it to later reupload to https://mockapi.io/projects.
+Example of data received:
+  {
+    "coord": {
+        "lon": -0.1257,
+        "lat": 51.5085
+    },
+    "weather": [
+        {
+            "id": 801,
+            "main": "Clouds",
+            "description": "few clouds",
+            "icon": "02n"
+        }
+    ],
+    "base": "stations",
+    "main": {
+        "temp": 283.04,
+        "feels_like": 283.04,
+        "temp_min": 281.05,
+        "temp_max": 284.84,
+        "pressure": 1029,
+        "humidity": 90,
+        "sea_level": 1029,
+        "grnd_level": 1024
+    },
+    "visibility": 10000,
+    "wind": {
+        "speed": 0.51,
+        "deg": 0
+    },
+    "clouds": {
+        "all": 20
+    },
+    "dt": 1730328691,
+    "sys": {
+        "type": 2,
+        "id": 2075535,
+        "country": "GB",
+        "sunrise": 1730271056,
+        "sunset": 1730306231
+    },
+    "timezone": 0,
+    "id": 2643743,
+    "name": "London",
+    "cod": 200
+}
+
+Example of data posted to MockAPI:
+  {
+    "date": "30-10-2024",
+    "city": "London",
+    "temperatureC": "20",
+    "weatherDescription": "cloudy",
+    "humidity": "50",
+    "windSpeed": "120",
+    "id": "5"
+}
+
+
 Running the code in console does the task
 Error handling is added
 Comments are added to explain the code
